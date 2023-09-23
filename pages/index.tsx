@@ -104,7 +104,7 @@ function Example({ customHomepageWidget }: ExampleProps) {
     <div className="flex gap-12 mx-4   md:mx-8 flex-col md:flex-row flex-wrap">
       {customHomepageWidget?.categories[0].products.slice(0,8).map(({ thumbnail }) => (
         <Link className="md:w-[calc(25%-36px)] flex flex-col " href={"./"}>
-          <div className="relative w-full  aspect-auto rounded-lg overflow-hidden">
+          <div className="relative w-full h-[calc(100vw-36px)]  md:h-[25vw] rounded-lg overflow-hidden">
             <div className="flex flex-col ps-2 pt-2 absolute gap-1">
               <button className="bg-transparent border-none md:p-3 p-2 rounded-full transition-colors duration-300 hover:bg-slate-200">
                 <FavoriteBorderOutlinedIcon className="md:w-4 md:h-4 w-2 h-2 text-gray-400"></FavoriteBorderOutlinedIcon>
