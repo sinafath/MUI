@@ -126,7 +126,7 @@ function Example({ customHomepageWidget }: ExampleProps) {
           <div className="flex flex-col gap-2 md:flex-row md:py-6 py-3 ">
             <h2 className="my-0 py-0 font-bold">جوراب صورتی </h2>
             <div className="flex flex-row justify-between md:flex-1 text-sm items-center">
-              <p className="my-0 py-0 text-gray-900"> نوسط سینا </p>
+              <p className="my-0 py-0 text-gray-900"> توسط سینا </p>
               <p className="my-0 py-0 text-gray-900"> 12000 ریال</p>
             </div>
           </div>
