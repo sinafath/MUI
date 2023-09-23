@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'bodyFont';
+    src: url('/fonts/YekanBakhFaNum-Regular.woff2') format('woff2');
+}
+
+* {
+    font-family: 'bodyFont' !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background: #fff;
+    box-shadow: 0 0 11px #eeee;
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 1rem !important;
+    box-sizing: border-box;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    color: black !important;
+    font-size: 1rem !important;
+}
+
+
+
+
+
+.swiper-button-disabled {
+    opacity: 0 !important;
+}

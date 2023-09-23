@@ -9,6 +9,9 @@ import createEmotionCache from '../src/createEmotionCache';
 import RTL from '../Rtl';
 import 'swiper/css';
 import './global.css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
