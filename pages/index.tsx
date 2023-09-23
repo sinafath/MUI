@@ -4,6 +4,7 @@ import ItemsList, {
   customHomepageWidget,
 } from "../components/ItemList";
 import HeroComponent from "../components/HeroComponent";
+import Gallery from "../components/gallery";
 
 const getUserDetailByFetchAPICall = async () => {
   try {
@@ -72,6 +73,7 @@ function Example({ customHomepageWidget }: ExampleProps) {
     <div className="bg-slate-100">
       <ItemsList list={customHomepageWidget?.categories[0].products} />
       <HeroComponent url={customHomepageWidget?.categories[0].products[0].thumbnail} />
+      <Gallery  list={customHomepageWidget?.categories[0].products} />
     </div>
   );
 }
