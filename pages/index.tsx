@@ -5,6 +5,7 @@ import ItemsList, {
 } from "../components/ItemList";
 import HeroComponent from "../components/HeroComponent";
 import Gallery from "../components/gallery";
+import IconsList from "../components/IconsList";
 
 const getUserDetailByFetchAPICall = async () => {
   try {
@@ -74,6 +75,7 @@ function Example({ customHomepageWidget }: ExampleProps) {
       <ItemsList list={customHomepageWidget?.categories[0].products} />
       <HeroComponent url={customHomepageWidget?.categories[0].products[0].thumbnail} />
       <Gallery  list={customHomepageWidget?.categories[0].products} />
+      <IconsList/>
     </div>
   );
 }
@@ -83,7 +85,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
   const customHomepageWidget = await getUserDetailByFetchAPICall();
   return {
     props: {
-      customHomepageWidget: customHomepageWidget.data.customHomepageWidget,
+      customHomepageWidget: customHomepageWidget?.data?.customHomepageWidget,
     },
   };
 };

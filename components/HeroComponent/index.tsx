@@ -6,7 +6,7 @@ type HeroComponentProps = {
 }
 function HeroComponent({url}:HeroComponentProps) {
   return (
-    <div className="flex gap-28 mx-4 bg-white md:bg-transparent  md:mx-8 flex-col md:flex-row mt-20">
+    <div className="flex gap-28 mx-4 pb-8 bg-white md:bg-transparent  md:mx-8 flex-col md:flex-row mt-20">
       <div className="relative md:w-1/2  w-full h-[calc(100vw-26px)]  md:h-[calc(50vw-26px)]  rounded-lg overflow-hidden">
 
         {url &&<Image

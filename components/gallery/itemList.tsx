@@ -39,8 +39,8 @@ type ItemsListProps = {
 
 function ItemsList({ list }: ItemsListProps) {
   return (
-    <div className="gap-4 w-1/4 flex-col ">
-      {list.slice(0, 1).map(({ thumbnail }) => (
+    <div className="gap-4 max-md:w-full  w-1/4 flex-col ">
+      {list.slice(0, 1).map(({ thumbnail,name }) => (
         <Link className="w-full flex flex-col relative" href={"./"}>
                   <RippleClick />
 
@@ -73,7 +73,7 @@ function ItemsList({ list }: ItemsListProps) {
             )}
           </div>
           <div className="flex flex-col gap-2 md:flex-row md:py-6 py-3 ">
-            <h2 className="my-0 py-0 font-bold">{""} </h2>
+            <h2 className="my-0 py-0 font-bold">{name} </h2>
             <div className="flex flex-row justify-between md:flex-1 text-sm items-center">
               <p className="my-0 py-0 text-gray-900"> توسط سینا </p>
               <p className="my-0 py-0 text-gray-900"> 12000 ریال</p>
