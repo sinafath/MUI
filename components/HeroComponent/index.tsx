@@ -26,7 +26,7 @@ function HeroComponent({url}:HeroComponentProps) {
             <br></br>
             <span  className="text-white  stroke-slate-600 webkit-text-stroke	"> ارزان </span>
           </h2>
-          <Link className="p-0 m-0 text-2xl text-gray-950 underline " href={"#"}>
+          <Link className="p-0 m-0 text-2xl text-gray-950 underline w-max " href={"#"}>
             یک مجموعه کامل
           </Link>
         </div>
