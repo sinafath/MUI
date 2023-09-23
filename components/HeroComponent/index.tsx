@@ -17,9 +17,9 @@ function HeroComponent({url}:HeroComponentProps) {
         />}
       </div>
       <div className="flex flex-col gap-8 w-1/2 px-16 md:px-0  h-full my-auto">
-        <div className=" mx-auto  flex flex-col gap-10   ">
+        <div className=" mx-auto  md:ms-4 flex flex-col gap-6   ">
           <p className="p-0 m-0 md:text-xl text-sm text-slate-600"> نگاهی به دنیا</p>
-          <h2 className="p-0 m-0 max-sm:text-3xl leading-[5.6   rem]  max-[910px]:text-4xl  text-7xl ">
+          <h2 className="p-0 m-0 max-sm:text-3xl leading-[5.6rem] w-max  max-[910px]:text-4xl  text-7xl ">
             <span className="text-white webkit-text-stroke "> زیباترین ها </span>
             <br></br>
             <span className="translate-x-4 "> بهترین ها</span>
