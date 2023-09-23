@@ -1,29 +1,36 @@
 import Image from "next/image";
 import Link from "next/link";
 
-function HeroComponent() {
+type HeroComponentProps = {
+  url?:string | null
+}
+function HeroComponent({url}:HeroComponentProps) {
   return (
-    <div className="flex gap-28 mx-4   md:mx-8 flex-col md:flex-row mt-20">
-         <div className="relative w-1/2 h-[calc(50vw-26px)]  rounded-lg overflow-hidden">
-        <Image
+    <div className="flex gap-28 mx-4 bg-white md:bg-transparent  md:mx-8 flex-col md:flex-row mt-20">
+      <div className="relative md:w-1/2  w-full h-[calc(100vw-26px)]  md:h-[calc(50vw-26px)]  rounded-lg overflow-hidden">
+
+        {url &&<Image
           alt=""
           fill
           className="w-full h-auto rounded-md object-cover "
-          src={"/209_1.jpg"}
-        />
+          src={url}
+        />}
       </div>
-      <div className="flex flex-col gap-36 w-1/2 h-full 	 my-auto">
-        <div className=" mx-auto  ">
-          <p className="p-0 m-0 text-xl">یک نگاهی به تاریخ</p>
-          <h2 className="p-0 m-0  text-5xl ">
-            اِمپرسیونیست‌ها و <br></br>استادان <br></br>مدرن
+      <div className="flex flex-col gap-8 w-1/2 px-16 md:px-0  h-full my-auto">
+        <div className=" mx-auto  flex flex-col gap-10   ">
+          <p className="p-0 m-0 md:text-xl text-sm text-slate-600"> نگاهی به دنیا</p>
+          <h2 className="p-0 m-0 max-sm:text-3xl leading-[5.6   rem]  max-[910px]:text-4xl  text-7xl ">
+            <span className="text-white webkit-text-stroke "> زیباترین ها </span>
+            <br></br>
+            <span className="translate-x-4 "> بهترین ها</span>
+            <br></br>
+            <span  className="text-white  stroke-slate-600 webkit-text-stroke	"> ارزان </span>
           </h2>
-          <Link className="p-0 m-0 text-2xl text-gray-950 " href={"#"}>
+          <Link className="p-0 m-0 text-2xl text-gray-950 underline " href={"#"}>
             یک مجموعه کامل
           </Link>
         </div>
       </div>
-   
     </div>
   );
 }

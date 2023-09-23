@@ -71,7 +71,7 @@ function Example({ customHomepageWidget }: ExampleProps) {
   return (
     <div className="bg-slate-100">
       <ItemsList list={customHomepageWidget?.categories[0].products} />
-      <HeroComponent />
+      <HeroComponent url={customHomepageWidget?.categories[0].products[0].thumbnail} />
     </div>
   );
 }

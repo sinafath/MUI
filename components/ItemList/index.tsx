@@ -38,7 +38,7 @@ type ItemsListProps = {
 
 function ItemsList({ list }: ItemsListProps) {
   return (
-    <div className="flex gap-12 px-4   md:px-8 flex-col md:flex-row flex-wrap max-w-[2500px] 2xl:mx-auto ">
+    <div className="flex gap-12 px-4   md:px-8 flex-col md:flex-row flex-wrap max-w-[1700px] 2xl:mx-auto ">
       {list.slice(0, 8).map(({ thumbnail }) => (
         <Link className="md:w-[calc(25%-36px)] flex flex-col " href={"./"}>
           <div className="relative w-full h-[calc(100vw-36px)]  md:h-[25vw]   max-h-[40rem] rounded-lg overflow-hidden">
