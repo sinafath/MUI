@@ -2,7 +2,8 @@ import { GetServerSideProps } from "next";
 import ItemsList, {
   ItemsListProps,
   customHomepageWidget,
-} from "../component/ItemList";
+} from "../components/ItemList";
+import HeroComponent from "../components/HeroComponent";
 
 const getUserDetailByFetchAPICall = async () => {
   try {
@@ -70,6 +71,7 @@ function Example({ customHomepageWidget }: ExampleProps) {
   return (
     <div className="bg-slate-100">
       <ItemsList list={customHomepageWidget?.categories[0].products} />
+      <HeroComponent />
     </div>
   );
 }

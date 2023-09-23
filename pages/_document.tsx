@@ -20,7 +20,7 @@ interface MyDocumentProps extends DocumentProps {
 
 export default function MyDocument({ emotionStyleTags }: MyDocumentProps) {
   return (
-    <Html dir="rtl" className={`${YekanBakhFaNumReg.className}`}>
+    <Html dir="rtl" >
       <Head>
         {/* PWA primary color */}
         <meta name="theme-color" content={theme.palette.primary.main} />
