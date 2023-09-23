@@ -37,9 +37,7 @@ type ExampleProps = {
 
 export default function DevAPage({ customHomepageWidget }: ExampleProps) {
     return (
-        <div className="min-h-screen w-full px-3 lg:px-16 bg-gray-200 py-11 lg:py-28">
             <HotAndNewSection data={customHomepageWidget.categories[0]} />
-        </div>
     )
 }
 
