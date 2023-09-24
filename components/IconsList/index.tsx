@@ -5,22 +5,20 @@ import Marvel from "./icons/Marvel";
 
 function IconsList() {
   return (
-    <div className="flex flex-row gap-4 overflow-x-scroll max-w-7xl mx-auto md:overflow-hidden mt-20">
-           <div className="flex justify-center items-center md:w-1/4 w-[60vw] ">
-        <Marvel className=" h-16 max-md:w-[60vw] " />
+    <div className="flex flex-row gap-4  max-w-7xl mx-auto max-md:max-h-[7rem] mt-7">
+      <div className="flex justify-center items-center w-1/4 ">
+        <Marvel className=" w-full  " />
       </div>{" "}
-      <div className="flex justify-center items-center md:w-1/4 w-[60vw] ">
-        <MIdontKnow className=" h-16 max-md:w-[60vw] " />
+      <div className="flex justify-center items-center w-1/4 ">
+        <MIdontKnow className="w-full  " />
       </div>
-   
-   
-      <div className="flex justify-center items-center md:w-1/4 w-[60vw]">
-        <Nike className=" h-16 max-md:w-[60vw] " />
+      <div className="flex justify-center items-center w-1/4  ">
+        <Nike className=" w-full  " />
       </div>{" "}
-      <div className="flex justify-center items-center md:w-1/4 w-[60vw] ">
-        <Moma className=" h-16 max-md:w-[60vw] " />
+      <div className="flex justify-center items-center w-1/4 ">
+        <Moma className=" w-full " />
       </div>
-  x
+      x
     </div>
   );
 }

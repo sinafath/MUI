@@ -3,7 +3,7 @@ function Marvel(props: React.SVGProps<SVGSVGElement>) {
     <svg
       width="1001px"
       height="403px"
-      viewBox="0 0 1001 403"
+      viewBox="-100 0 1301 403"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       {...props}

@@ -3,7 +3,7 @@ function MIdontKnow(props: React.SVGProps<SVGSVGElement>) {
     <svg
       width="296px"
       height="238px"
-      viewBox="0 0 296 238"
+      viewBox="-200 0 696 238"
       version="1.1"
       {...props}
     >
